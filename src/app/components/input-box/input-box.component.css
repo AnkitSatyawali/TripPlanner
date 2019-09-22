@@ -1,0 +1,157 @@
+.form{
+	width:30rem;
+	height:15rem;
+	margin:0px auto;
+	
+	
+	opacity:0.3;
+	border-radius:2rem;
+}
+.main{
+	width:100%;
+	position:relative;
+
+}
+.head{
+	display: flex;
+	padding-left: 5%;
+	text-align: center;
+}
+.circle{
+	border-radius: 50%;
+	border:1px solid black;
+	margin-top: 7rem;
+	width:2rem;
+	color:black;
+	font-size: 1.5rem;
+	background-color: white;
+}
+.notcircle{
+	border:none;
+}
+.searchbar{
+	width:25rem;
+	padding-left:1rem;
+	height:2.5rem;
+	margin-top: 5rem;
+	background-color: lightgrey;
+	border-radius: 2rem;
+}
+.searchbar:focus{
+	outline:none;
+}
+img{
+	height:1.5rem;
+	filter:invert(1);
+}
+img:hover{
+	cursor: pointer;
+}
+.center{
+
+}
+.match-parent {
+  width: 100%;
+  height: 100vh;
+  position:absolute;
+}
+*{
+	font-family:Roboto;
+
+}
+.info{
+	margin-bottom: 2%;
+}
+.info1{
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.cir1{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: green;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+.cir2{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: pink;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+.cir3{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: violet;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+.cir4{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: red;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+.cir5{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: yellow;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+.cir6{
+	width:10%;
+	margin-top:14%;
+	margin-bottom:5%;
+	border-radius: 50%;
+	margin-right: 6%;
+	background-color: blue;
+	text-align: center;
+	padding-top: 3%;
+	/*padding-bottom: 1%;*/
+}
+
+.main2{
+	width:100%;
+	height:100vh;
+	display:flex;
+	overflow: hidden;
+}
+.sidenav{
+	width:30%;
+	height:100%;
+}
+.map{
+	width:70%;
+	height:100%;
+}
+.heading{
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-left:9%;
+}
+mat-card{
+	border-radius:0px;
+}

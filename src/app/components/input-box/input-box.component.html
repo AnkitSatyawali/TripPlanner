@@ -1,0 +1,91 @@
+<div class="map" id="map" class="match-parent"></div>
+<div *ngIf="show">	
+<div class="main">
+	<div>
+		<div>
+			<div class="form">
+				<div class="head">
+					<div *ngFor="let word of words" >
+                        <div class="circle"> {{word}}</div>
+                        <span style="margin-left:2rem" *ngIf="word==' '"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style='text-align: center'>
+		<div>	
+		<form>
+		<input name="place" [(ngModel)]="place" class="searchbar" type="text" placeholder="Where are you staying ?"><br>
+		<button *ngIf="place!=''" mat-raised-button style=
+		"margin-top: 10px" (click)="onSubmit()">Enter Place</button>
+	</form>
+	</div>
+		</div>
+	</div>
+</div>
+</div>
+<div *ngIf="!show">
+	<div class="main2">
+	<div class="sidenav">
+		<mat-card class="heading">
+			ITINENARY
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir1">1</div>
+			<div>
+			<div class="info">Breakfast</div>
+			<div class="info1"><span class="number">{{cafename}}</span></div>
+			<div class="info">{{cafeaddress}}</div>
+		</div>
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir2">2</div>
+			<div>
+			<div class="info">Neighbourhood</div>
+			<div class="info1"><span class="number">{{funname}}</span></div>
+			<div class="info">{{funaddress}}</div>
+		</div>
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir3">3</div>
+			<div>
+			<div class="info">Lunch</div>
+			<div class="info1"><span class="number">{{lunchname}}</span></div>
+			<div class="info">{{lunchaddress}}</div>
+		</div>
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir4">4</div>
+			<div>
+			<div class="info">Shopping</div>
+			<div class="info1"><span class="number">{{shoppingname}}</span></div>
+			<div class="info">{{shoppingaddress}}</div>
+			<div *ngIf="!shoppingaddress">Not Provided</div>
+		</div>
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir5">5</div>
+			<div>
+			<div class="info">Dinner</div>
+			<div class="info1"><span class="number">{{dinnername}}</span></div>
+			<div class="info">{{dinneraddress}}</div>
+		</div>
+		</mat-card>
+		<mat-card class="places" style="display:flex;">
+			<div class="cir6">6</div>
+			<div>
+			<div class="info">Pub</div>
+			<div class="info1"><span class="number">{{ pubname }}</span></div>
+			<div *ngIf="pubaddress" class="info">{{ pubaddress }}</div>
+			<div *ngIf="!pubaddress">Not provided</div>
+		</div>
+		</mat-card>
+		<mat-card style="height:2rem">
+
+		</mat-card>
+	</div>
+	<div class="map"> 
+	</div>
+</div> 
+
+	</div>
