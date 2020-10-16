@@ -112,8 +112,9 @@ trackUserLocation: true
   		this.op[0][0]=this.lati;
   		this.locations.push(d);
   		this.show=false;
-  		this.getData(this.place);
-  		this.drawline();
+		  this.getData(this.place);
+		  this.drawline();
+		  this.locateline();
   		const dialogRef = this.dialog.open(LoaderComponent,{
   			data:{latitude:this.lati,longitude:this.long}
   		});
@@ -201,7 +202,48 @@ getData(place){
       	console.log(data);
       })
   }
-  drawline()
+  drawline(){
+	var array = new Array(7);
+	for(var i=0;i<array.length;i++)
+	{
+		array[i] = new Array(2);
+		array[i] = this.op[i];
+	}
+	console.log(typeof(array))
+	console.log(array);
+
+	this.map.flyTo({center:[this.op[0][0],this.op[0][1]],zoom:13});
+	this.map.addLayer({
+"id": "route",
+"type": "line",
+"source": {
+"type": "geojson",
+"data": {
+"type": "Feature",
+"properties": {},
+"geometry": {
+"type": "LineString",
+"coordinates":  [ [77.2, 28.7],
+[77.20171940298643, 28.681587650228284],
+[77.15818948026143, 28.703045378352055],
+[77.20494771461874, 28.693244735370346],
+[77.2029447555542, 28.684488757456002],
+[77.20494771461874, 28.693244735370346],
+[77.18524530855996, 28.69657730583533]]
+}
+}
+},
+"layout": {
+"line-join": "round",
+"line-cap": "round"
+},
+"paint": {
+"line-color": "green",
+"line-width": 8
+}
+});
+  }
+  locateline()
   {
   	
   	var array = new Array(7);
