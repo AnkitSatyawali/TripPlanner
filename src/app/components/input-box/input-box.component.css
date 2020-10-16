@@ -12,6 +12,11 @@
 	position:relative;
 
 }
+.smoothTransition{
+	width:auto;
+	transform-box: auto;
+	font-style: italic;
+}
 .head{
 	display: flex;
 	padding-left: 5%;
