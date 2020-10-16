@@ -22,6 +22,11 @@
 	padding-left: 5%;
 	text-align: center;
 }
+.newPlaces{
+	display: flex;
+	padding-left: 5%;
+	text-align: center;
+}
 .circle{
 	border-radius: 50%;
 	border:1px solid black;
